@@ -82,7 +82,7 @@ function deleteStation (req,res)  {
 }
 
 function addSampleStation(req,res){
-    console.log("Petició d'afagir estacio mostra")
+    console.log("Petició d'afegir estacio mostra")
 
    let bikeNew= new Bike ({bike: "bichicleta54",kms:250,description: "llantacas",assigned:true})
 
@@ -90,7 +90,7 @@ function addSampleStation(req,res){
         if (err) res.status(500).send({message: `Error al salvar en la BBDD: ${err}`})
 
         res.status(200).send({bike: bikeStored})
-        let stationNew = new Station({name: "Plaça Catalunya",state:"available",description: "Value", bikes: ["5ce9703f5359f64b613181e8","5ce9710373503246951dba7e","5ce9711073503246951dba7f","5ce9712773503246951dba80"]});
+        let stationNew = new Station({name: "Arc de triomf",state:"available",description: "centrica", bikes: ["5ceb9a11f798f93598beed6c","5ceb9a2ef798f93598beed6d","5ceb9a45f798f93598beed6e","5ceb9a79df48b82ecc1c6deb"]});
         stationNew.save((err, stationStored) => {
             if (err) res.status(500).send({message: `Error al salvar la sattion en la BBDD: ${err}`})
             res.status(200).send({station: stationStored})
