@@ -81,7 +81,7 @@ function deleteStation (req,res)  {
     })
 }
 
-function addSampleStation(req,res){
+function posarmostra(req,res){
     console.log("Petició d'afegir estacio mostra")
 
    let bikeNew= new Bike ({bike: "bichicleta54",kms:250,description: "llantacas",assigned:true})
@@ -112,7 +112,7 @@ module.exports = {
     getStations,
     getStation,
     deleteStation,
-    addSampleStation,
+    posarmostra,
 
     
 }

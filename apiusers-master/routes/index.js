@@ -22,10 +22,8 @@ api.post('/station', stationCtrl.saveStation)
 api.get('/stations', stationCtrl.getStations)
 api.get('/station/:stationId', stationCtrl.getStation)
 api.delete('/station/:stationId', stationCtrl.deleteStation)
-//api.get('/sation/getbikesdeStation/:stationId',stationCtrl.getBikesDeStation)
-//api.post('/station/newBike/', stationCtrl.addBikeToStation)
-//api.get('station/addbiketostationtest', stationCtrl.addbiketostationtest)
-api.get('/afagirMostra',stationCtrl.addSampleStation)
+
+api.get('/afagirMostra',stationCtrl.posarmostra)
 
 
 
